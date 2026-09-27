@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ordina | Torte su misura, vassoi e buoni regalo | Dolce Chiara</title>
+<meta name="description" content="Disegna la tua torta con anteprima, calcola il vassoio giusto per la tua festa, prenota per le ricorrenze o regala un buono Dolce Chiara.">
+<meta name="theme-color" content="#5E1433">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Dolce Chiara">
+<meta property="og:title" content="Disegna la tua torta | Dolce Chiara">
+<meta property="og:description" content="Torte su misura con anteprima, vassoi per eventi, ricorrenze e buoni regalo.">
+<meta property="og:image" content="https://studiomenny.github.io/DOLCE-CHIARA/images/evento.jpg">
+<meta property="og:url" content="https://studiomenny.github.io/DOLCE-CHIARA/ordina.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%235E1433'/%3E%3Ctext x='50' y='64' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='46' fill='%23C3D3A6'%3Edc%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="js/main.js" defer></script>
+</head>
+<body data-pagina="ordina">
+<noscript><p class="wrap" style="padding:14px 0">Il configuratore funziona con JavaScript attivo. In alternativa chiamaci al <a href="tel:+393665488260">+39 366 548 8260</a>.</p></noscript>
+
+<main id="contenuto">
+  <section class="pagina-testa smerlo scuro">
+    <img src="images/evento.jpg" alt="">
+    <div class="wrap">
+      <span class="cappello">Ordina</span>
+      <h1>Per le tue occasioni, su misura.</h1>
+      <p class="intro">Ogni richiesta arriva a noi su WhatsApp, già compilata. Ti rispondiamo per confermare i dettagli: niente pagamenti online, si paga al ritiro in negozio.</p>
+      <nav class="sotto-menu" aria-label="In questa pagina">
+        <a href="#torta">Torta su misura</a><a href="#vassoi">Vassoi per eventi</a><a href="#ricorrenze">Ricorrenze</a><a href="#buono">Buono regalo</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- CONFIGURATORE TORTA -->
+  <section class="sez" id="torta" aria-labelledby="torta-titolo">
+    <div class="wrap">
+      <div class="testa">
+        <span class="cappello">Configuratore</span>
+        <h2 id="torta-titolo">Disegna la tua torta</h2>
+        <p class="intro">Scegli passo dopo passo: l'anteprima cambia mentre scegli. Serve almeno 3 giorni di anticipo.</p>
+      </div>
+
+      <div class="configuratore">
+        <form id="torta-form" data-torta novalidate>
+          <fieldset class="passo">
+            <legend><span class="num">1</span>La base</legend>
+            <div class="opzioni">
+              <label class="opzione"><input type="radio" name="base" value="Pan di Spagna" checked><span><i style="--c:#EFCF8E"></i>Pan di Spagna</span></label>
+              <label class="opzione"><input type="radio" name="base" value="Cacao"><span><i style="--c:#5A3526"></i>Cacao</span></label>
+              <label class="opzione"><input type="radio" name="base" value="Red velvet"><span><i style="--c:#A3243A"></i>Red velvet</span></label>
+              <label class="opzione"><input type="radio" name="base" value="Pistacchio"><span><i style="--c:#A9BD78"></i>Pistacchio</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="passo">
+            <legend><span class="num">2</span>La crema</legend>
+            <div class="opzioni">
+              <label class="opzione"><input type="radio" name="crema" value="Chantilly" checked><span><i style="--c:#FFF4DC"></i>Chantilly</span></label>
+              <label class="opzione"><input type="radio" name="crema" value="Mascarpone"><span><i style="--c:#F6E7C8"></i>Mascarpone</span></label>
+              <label class="opzione"><input type="radio" name="crema" value="Cioccolato"><span><i style="--c:#6E4431"></i>Cioccolato</span></label>
+              <label class="opzione"><input type="radio" name="crema" value="Frutti rossi"><span><i style="--c:#E58CA3"></i>Frutti rossi</span></label>
+              <label class="opzione"><input type="radio" name="crema" value="Pistacchio"><span><i style="--c:#D3E0AE"></i>Pistacchio</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="passo">
+            <legend><span class="num">3</span>La finitura</legend>
+            <div class="opzioni">
+              <label class="opzione"><input type="radio" name="decoro" value="Ciuffi di panna" checked><span>Ciuffi di panna</span></label>
+              <label class="opzione"><input type="radio" name="decoro" value="Frutta fresca"><span>Frutta fresca</span></label>
+              <label class="opzione"><input type="radio" name="decoro" value="Naked cake"><span>Naked cake</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="passo">
+            <legend><span class="num">4</span>Per quante persone</legend>
+            <div class="persone">
+              <input type="range" name="persone" min="6" max="40" value="12" aria-label="Numero di persone">
+              <output data-persone>12</output>
+            </div>
+            <small style="display:block;color:var(--tenue);margin-top:8px">Oltre le 24 persone la torta diventa a due piani.</small>
+          </fieldset>
+
+          <fieldset class="passo">
+            <legend><span class="num">5</span>Dedica e ritiro</legend>
+            <div class="campo">
+              <label class="piccola" for="dedica">Scritta sulla torta <span class="contatore" data-conta-dedica>0/28</span></label>
+              <input type="text" id="dedica" name="dedica" maxlength="28" placeholder="Es. Auguri Giulia">
+            </div>
+            <div class="campo">
+              <label class="piccola" for="data">Giorno di ritiro</label>
+              <input type="date" id="data" name="data" required>
+              <small data-errore-data>Serve almeno 3 giorni di anticipo.</small>
+            </div>
+          </fieldset>
+
+          <fieldset class="passo" style="border-bottom:0; margin-bottom:0">
+            <legend><span class="num">6</span>I tuoi dati</legend>
+            <div class="campi-2">
+              <div class="campo"><label class="piccola" for="nome">Nome</label><input type="text" id="nome" name="nome" autocomplete="name" required></div>
+              <div class="campo"><label class="piccola" for="tel">Telefono</label><input type="tel" id="tel" name="tel" autocomplete="tel"></div>
+            </div>
+            <div class="campo">
+              <label class="piccola" for="note">Allergie o altre richieste</label>
+              <textarea id="note" name="note" placeholder="Es. senza frutta a guscio, candeline, colori della festa"></textarea>
+            </div>
+          </fieldset>
+          <button class="btn btn-pieno solo-mobile" type="submit">Invia la richiesta su WhatsApp</button>
+        </form>
+
+        <aside class="anteprima" aria-label="Anteprima della torta">
+          <span class="anteprima-titolo">La tua torta</span>
+          <svg class="torta-svg" viewBox="0 0 400 340" role="img" aria-label="Disegno della torta scelta"></svg>
+          <dl class="riepilogo" data-riepilogo></dl>
+          <button class="btn btn-pieno" type="submit" form="torta-form" data-invia-torta>Invia la richiesta su WhatsApp</button>
+          <p class="piccolo">Ti rispondiamo per confermare. Il disegno è indicativo: la torta vera sarà più buona.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- VASSOI -->
+  <section class="sez sez-rosa" id="vassoi" aria-labelledby="vassoi-titolo">
+    <div class="wrap">
+      <div class="testa appare">
+        <span class="cappello">Vassoi per eventi</span>
+        <h2 id="vassoi-titolo">Compleanni, comunioni, feste in ufficio</h2>
+        <p class="intro">Pasticcini misti preparati il giorno stesso, pronti da ritirare. Il pasticcere ti aiuta a scegliere gusti e quantità.</p>
+      </div>
+      <div class="vassoi appare">
+        <article class="vassoio" data-formato="piccolo">
+          <div class="vassoio-foto"><img src="images/vassoio_misto.jpg" alt="Vassoio con pasticcini misti di frolla, bignè e tartellette" loading="lazy"></div>
+          <span class="bollino">Consigliato per te</span>
+          <h3>Vassoio piccolo</h3><span class="quanti">Fino a 12 persone</span>
+          <p>Un assortimento misto per un aperitivo tra amici o una riunione.</p>
+        </article>
+        <article class="vassoio" data-formato="medio">
+          <div class="vassoio-foto"><img src="images/vassoi_pasticceria.jpg" alt="Vassoi dorati pieni di pasticcini assortiti in laboratorio" loading="lazy"></div>
+          <span class="bollino">Consigliato per te</span>
+          <h3>Vassoio medio</h3><span class="quanti">Da 13 a 25 persone</span>
+          <p>Il più richiesto per compleanni e feste in casa: frolla, bignè e mignon.</p>
+        </article>
+        <article class="vassoio" data-formato="grande">
+          <div class="vassoio-foto"><img src="images/evento.jpg" alt="Allestimento di dolci su alzatine a più piani" loading="lazy"></div>
+          <span class="bollino">Consigliato per te</span>
+          <h3>Vassoio grande</h3><span class="quanti">Oltre 25 persone</span>
+          <p>Allestimento su più livelli per comunioni, battesimi e feste numerose.</p>
+        </article>
+      </div>
+
+      <div class="calcolo scuro appare" data-calcolo>
+        <div>
+          <h3>Quanti pasticcini servono?</h3>
+          <p>Indicaci l'occasione e il numero di ospiti: ti diciamo quanti pezzi calcolare e quale vassoio fa per te.</p>
+          <label for="occasione">Occasione</label>
+          <select id="occasione" name="occasione">
+            <option value="2">Colazione in ufficio</option>
+            <option value="3" selected>Compleanno o festa in casa</option>
+            <option value="4">Comunione, battesimo, cresima</option>
+            <option value="2.5">Fine pasto dopo cena</option>
+          </select>
+          <label for="quanti">Numero di ospiti</label>
+          <input type="number" id="quanti" name="quanti" min="1" max="300" value="15" inputmode="numeric">
+        </div>
+        <div class="calcolo-esito" aria-live="polite">
+          <p>Ti servono circa</p>
+          <p class="grande" data-pezzi>45</p>
+          <p>pasticcini: ti consigliamo <strong data-formato-testo>il vassoio medio</strong>.</p>
+          <button class="btn btn-chiaro" type="button" data-chiedi-vassoio>Chiedi questo vassoio</button>
+        </div>
+      </div>
+
+      <p style="text-align:center; margin-top:40px"><a class="btn btn-bordo" href="tel:+393665488260">Chiama per organizzare il tuo evento</a></p>
+    </div>
+  </section>
+
+  <!-- RICORRENZE -->
+  <section class="sez" id="ricorrenze" aria-labelledby="feste-titolo">
+    <div class="wrap">
+      <div class="testa appare">
+        <span class="cappello">Calendario</span>
+        <h2 id="feste-titolo">Le ricorrenze dell'anno</h2>
+        <p class="intro">Nei giorni di festa la vetrina si svuota presto. Prenota entro la data indicata e il tuo dolce ti aspetta.</p>
+      </div>
+      <ol class="feste appare" data-feste></ol>
+    </div>
+  </section>
+
+  <!-- BUONO REGALO -->
+  <section class="sez sez-rosa" id="buono" aria-labelledby="buono-titolo">
+    <div class="wrap regalo">
+      <div class="buono appare" aria-hidden="true">
+        <div><span class="buono-marca">Dolce Chiara</span><br><span class="buono-per">Buono regalo per</span></div>
+        <div><p class="buono-nome" data-b-nome>Il nome di chi lo riceve</p><p class="buono-msg" data-b-msg></p></div>
+        <div style="display:flex;justify-content:space-between;align-items:end;gap:12px"><span class="buono-valore" data-b-valore>30 €</span><span class="buono-per" data-b-da></span></div>
+      </div>
+      <form data-buono class="appare">
+        <span class="cappello">Buono regalo</span>
+        <h2 id="buono-titolo" style="margin-bottom:24px">Regala una pausa dolce</h2>
+        <div class="campi-2">
+          <div class="campo"><label class="piccola" for="per">Per chi è</label><input type="text" id="per" name="per" maxlength="30" required></div>
+          <div class="campo"><label class="piccola" for="da">Da parte di</label><input type="text" id="da" name="da" maxlength="30"></div>
+        </div>
+        <div class="campo">
+          <label class="piccola" for="valore">Valore</label>
+          <select id="valore" name="valore">
+            <option value="20">20 €</option><option value="30" selected>30 €</option><option value="50">50 €</option><option value="libero">Valore a scelta</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label class="piccola" for="messaggio">Messaggio <span class="contatore" data-conta-msg>0/70</span></label>
+          <input type="text" id="messaggio" name="messaggio" maxlength="70" placeholder="Es. Per la tua colazione del compleanno">
+        </div>
+        <button class="btn btn-pieno" type="submit">Richiedi il buono su WhatsApp</button>
+        <small style="display:block;color:var(--tenue);margin-top:12px">Lo prepariamo stampato in negozio, pronto da regalare.</small>
+      </form>
+    </div>
+  </section>
+</main>
+</body>
+</html>

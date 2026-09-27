@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il menù | Dolce Chiara, Nogara</title>
+<meta name="description" content="Cornetti, pasticceria, torte e monoporzioni di Dolce Chiara, con gli allergeni di ogni dolce.">
+<meta name="theme-color" content="#5E1433">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Dolce Chiara">
+<meta property="og:title" content="Il menù di Dolce Chiara">
+<meta property="og:description" content="Cornetti, pasticceria, torte e monoporzioni, con gli allergeni di ogni dolce.">
+<meta property="og:image" content="https://studiomenny.github.io/DOLCE-CHIARA/images/vetrina_mista.jpg">
+<meta property="og:url" content="https://studiomenny.github.io/DOLCE-CHIARA/menu.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%235E1433'/%3E%3Ctext x='50' y='64' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='46' fill='%23C3D3A6'%3Edc%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="js/main.js" defer></script>
+</head>
+<body data-pagina="menu">
+<noscript><p class="wrap" style="padding:14px 0">Per vedere il menù completo attiva JavaScript, oppure chiamaci al <a href="tel:+393665488260">+39 366 548 8260</a>.</p></noscript>
+
+<main id="contenuto">
+  <section class="pagina-testa smerlo scuro">
+    <img src="images/vetrina_mista.jpg" alt="">
+    <div class="wrap">
+      <span class="cappello">Il menù</span>
+      <h1>Tutto quello che trovi in vetrina.</h1>
+      <p class="intro">Tocca un dolce per vederlo da vicino. Le proposte cambiano con le stagioni: se cerchi qualcosa in particolare, scrivici.</p>
+    </div>
+  </section>
+
+  <section class="sez">
+    <div class="wrap">
+      <div class="filtri">
+        <div class="chips" data-chips role="group" aria-label="Filtra per categoria"></div>
+        <label class="interruttore"><input type="checkbox" data-guscio> Nascondi i dolci con frutta a guscio</label>
+      </div>
+      <div class="prodotti" data-prodotti aria-live="polite"></div>
+      <p class="nota">Gli allergeni indicati sono quelli principali della ricetta. In laboratorio lavoriamo anche frutta a guscio, glutine, latte e uova: non possiamo escludere tracce. Per intolleranze o allergie gravi parlane con noi prima di ordinare.</p>
+    </div>
+  </section>
+
+  <section class="sez sez-rosa">
+    <div class="wrap ricorrenza appare">
+      <p class="conta" style="font-size:clamp(3rem,7vw,5rem)">Su misura</p>
+      <div>
+        <h2>Non trovi la torta giusta?</h2>
+        <p class="intro">Con il configuratore scegli base, crema, finitura e dedica. Vedi l'anteprima e ce la mandi su WhatsApp.</p>
+      </div>
+      <a class="btn btn-pieno" href="ordina.html#torta">Disegna la tua torta</a>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lb-nome">
+  <div class="lb-scheda">
+    <img data-lb-img src="" alt="">
+    <div class="lb-testo">
+      <span class="cappello" data-lb-cat></span>
+      <h3 id="lb-nome" data-lb-nome></h3>
+      <p data-lb-desc></p>
+      <div class="allergeni" data-lb-all aria-label="Allergeni"></div>
+      <button class="btn btn-pieno" type="button" data-lb-chiedi>Chiedi se è disponibile</button>
+    </div>
+  </div>
+  <button class="lb-btn lb-chiudi" type="button" aria-label="Chiudi">✕</button>
+  <button class="lb-btn lb-prec" type="button" aria-label="Dolce precedente">‹</button>
+  <button class="lb-btn lb-succ" type="button" aria-label="Dolce successivo">›</button>
+</div>
+</body>
+</html>
