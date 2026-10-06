@@ -10,10 +10,10 @@ const NEGOZIO = {
   telefonoVisibile: '+39 366 548 8260',
   whatsapp: '393665488260',
   email: 'studiomenny.web@gmail.com',
-  indirizzo: 'Via Palmino Sterzi 41',
+  indirizzo: 'Via delle Rose 5',
   citta: '37054 Nogara (VR)',
-  mappa: 'https://www.google.com/maps?q=Via+Palmino+Sterzi+41,+Nogara+VR&output=embed',
-  mappaLink: 'https://www.google.com/maps/search/?api=1&query=Via+Palmino+Sterzi+41+Nogara+VR'
+  mappa: 'https://www.google.com/maps?q=Nogara+VR&output=embed',
+  mappaLink: 'https://www.google.com/maps/search/?api=1&query=Nogara+VR'
 };
 
 /* Orari: 0 = domenica ... 6 = sabato. Ore in formato decimale (15.5 = 15:30) */
@@ -134,7 +134,7 @@ function montaLayout() {
         <li>${NEGOZIO.indirizzo}, ${NEGOZIO.citta}</li></ul></div>
     </div>
     <div class="piede-basso">
-      <p>© ${new Date().getFullYear()} Dolce Chiara. P.IVA 00000000000</p>
+      <p>© ${new Date().getFullYear()} Dolce Chiara. P.IVA 00000000000<br>Sito realizzato da <a href="https://www.studiomenny.it/" target="_blank" rel="noopener">Studio Menny</a></p>
       <nav aria-label="Informazioni legali">
         <a href="legale.html#note-legali">Note legali</a>
         <a href="legale.html#privacy">Privacy</a>

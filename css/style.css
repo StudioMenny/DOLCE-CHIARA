@@ -141,7 +141,7 @@ h3{font-size:clamp(1.3rem, 2vw, 1.6rem); line-height:1.2;}
 .hero{background:var(--lampone); color:var(--su-scuro); overflow:hidden; --smerlo-colore:var(--zucchero);}
 .hero .wrap{display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:clamp(32px, 5vw, 72px); padding-top:clamp(48px, 7vw, 96px); padding-bottom:clamp(72px, 9vw, 120px);}
 .hero h1{color:var(--su-scuro);}
-.hero h1 .riga{display:block; overflow:hidden; padding-bottom:.15em; margin-bottom:-.15em;}
+.hero h1 .riga{display:block; overflow:hidden;}
 .hero h1 .riga > span{display:block; transition:transform 1s var(--ease);}
 .js .hero h1 .riga > span{transform:translateY(105%);}
 .js .pronto .hero h1 .riga > span{transform:none;}
